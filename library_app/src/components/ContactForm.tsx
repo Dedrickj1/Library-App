@@ -62,7 +62,7 @@ const ContactForm = (props:ContactFormProps) => {
               <Input {...register('paper_cover')} name='paper_cover' placeholder="Paper cover" />
             </div>
             <div className="flex p-1">
-              <Button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-800 text-white"
+              <Button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-600 text-white"
               >
                 Submit
               </Button>

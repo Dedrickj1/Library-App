@@ -68,7 +68,7 @@ function DataTable() {
                     setSelectionModel(item);
                 }}
                 pagination={true} // Enable pagination
-                pageSizeOptions={[5]} // Set page size options
+                pageSizeOptions={[10]} // Set page size options
             />
         </div>
     </>
