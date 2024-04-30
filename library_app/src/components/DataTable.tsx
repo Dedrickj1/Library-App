@@ -8,11 +8,11 @@ import { useGetData } from '../custom-hooks/FetchData';
 
 const columns: GridColDef[] = [
     { field: 'id', headerName: "ID", width:90,},
-    { field: 'Author_name', headerName: "Author's Name", flex:1},
-    { field: 'Book_title', headerName: "Title of Book", flex:1},
-    { field: 'Book_length', headerName: "Length of Book", flex:1},
-    { field: 'Hard_cover', headerName: "Hard Cover", flex: 1},
-    { field: 'Paper_cover', headerName: "Paper Cover", flex: 1}
+    { field: 'author_name', headerName: "Author's Name", flex:1},
+    { field: 'book_title', headerName: "Title of Book", flex:1},
+    { field: 'book_length', headerName: "Length of Book", flex:1},
+    { field: 'hardcover', headerName: "Hard Cover", flex: 1},
+    { field: 'paperback', headerName: "Paper Cover", flex: 1}
 ]
 
 

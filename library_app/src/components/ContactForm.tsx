@@ -34,7 +34,7 @@ const ContactForm = (props:ContactFormProps) => {
           dispatch(choosePaperback(data.paperback));
 
           server_calls.create(store.getState())
-          setTimeout( () => {window.location.reload()}, 1000);
+          // setTimeout( () => {window.location.reload()}, 1000);
         }
     }
 
