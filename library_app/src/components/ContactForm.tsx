@@ -30,11 +30,11 @@ const ContactForm = (props:ContactFormProps) => {
           dispatch(chooseAuthor_name(data.author_name));
           dispatch(chooseBook_title(data.Book_title));
           dispatch(chooseBook_length(data.Book_length));
-          dispatch(chooseHardcover(data.hardcover));
-          dispatch(choosePaperback(data.paperback));
-
-          server_calls.create(store.getState())
-          // setTimeout( () => {window.location.reload()}, 1000);
+          dispatch(chooseHardcover(data.book_hardcover));
+          dispatch(choosePaperback(data.book_paperback));
+          console.log(data)
+          server_calls.create(data)
+          setTimeout(() => {window.location.reload()}, 1000);
         }
     }
 
@@ -54,12 +54,12 @@ const ContactForm = (props:ContactFormProps) => {
               <Input {...register('book_length')} name='book_length' placeholder="Book length" />
             </div>
             <div>
-              <label htmlFor="hard_cover">Hardcover?</label>
-              <Input {...register('hard_cover')} name='hard_cover' placeholder="Hard cover" />
+              <label htmlFor="book_hardcover">Hardcover?</label>
+              <Input {...register('book_hardcover')} name='book_hardcover' placeholder="Hard cover" />
             </div>
             <div>
-              <label htmlFor="paper_cover">Papercover?</label>
-              <Input {...register('paper_cover')} name='paper_cover' placeholder="Paper cover" />
+              <label htmlFor="book_paperback">Papercover?</label>
+              <Input {...register('book_paperback')} name='book_paperback' placeholder="Paper cover" />
             </div>
             <div className="flex p-1">
               <Button className="flex justify-start m-3 bg-slate-300 p-2 rounded hover:bg-slate-600 text-white"

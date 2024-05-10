@@ -51,14 +51,14 @@ function Navbar() {
                     Home
                     </Link>
                 </div>
-              </Button>
-              <Button className="p-3 m-5 bg-gray-500 justify-center">
-                <div>
+              {/* </Button>
+              {/* <Button className="p-3 m-5 bg-gray-500 justify-center">
+                {/* <div>
                   <Link to='/about' className='flex place-items-center mt-4 lg:inLine-block lg:mt-0
                   text-gray-200 hover:text-white mr-4'>
                     About
                     </Link>
-                </div>
+                </div> */}
               </Button>
               <Button className="p-3 m-5 bg-gray-500 justify-center">
                 <div>
