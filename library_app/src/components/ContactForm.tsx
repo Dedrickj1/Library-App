@@ -4,7 +4,7 @@ import Input from "./Input"
 
 import { useForm } from 'react-hook-form'
 import { server_calls } from '../api/server'
-import { useDispatch, useStore } from 'react-redux';
+import { useDispatch, useStore, } from 'react-redux';
 import { chooseAuthor_name, chooseBook_title, chooseBook_length, chooseHardcover, choosePaperback} from "../redux/slices/RootSlice";
 // interfaces
 interface ContactFormProps {
@@ -33,7 +33,7 @@ const ContactForm = (props:ContactFormProps) => {
           dispatch(chooseHardcover(data.book_hardcover));
           dispatch(choosePaperback(data.book_paperback));
           console.log(data)
-          server_calls.create(data)
+          server_calls.create(store.getState())
           setTimeout(() => {window.location.reload()}, 1000);
         }
     }
